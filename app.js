@@ -39,6 +39,8 @@ var questionFive={
 }
 
 
+
+
 var question=[questionOne,questionTwo,questionThree,questionFour,questionFive];
 
 function play(question,answer){
@@ -54,3 +56,20 @@ function play(question,answer){
 
     
   }
+
+
+
+for(i=0;i<question.length;i++){
+
+    play(question[i].question,question[i].answer);
+    console.log("------------")
+    
+ }
+    console.log('Your score is '+score+"\n")
+    console.log("The high scores are:")
+    console.log(highScore.first);
+    console.log(highScore.second);
+    console.log("If you have beaten their score, please send me a screenshot and I'll update the scores.")
+   
+   
+  
