@@ -37,3 +37,20 @@ var questionFive={
   question:"\nWhat is my favorite color?\n",
   answer:"Light Green"
 }
+
+
+var question=[questionOne,questionTwo,questionThree,questionFour,questionFive];
+
+function play(question,answer){
+    var userAns=readlineSync.question(question);
+    if (userAns===answer){
+      console.log("You are right!\n");
+      score=score+1;
+    }
+    
+    else{
+      console.log('You are wrong!\n');
+    }
+
+    
+  }
